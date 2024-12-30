@@ -2,7 +2,6 @@
 #У задачи должны быть атрибуты: описание задачи, срок выполнения и статус 
 #(выполнено/не выполнено). Реализуй функцию для добавления задач, отметки выполненных 
 #задач и вывода списка текущих (не выполненных) задач.
-
 class Task:
     def __init__(self, action, time):
         self.action = action
@@ -29,10 +28,9 @@ class TaskManager:
 # Пример использования
 manager = TaskManager()
 print(manager.tasks)
-
 manager.add_task("Испечь пирог", 2)
 manager.add_task("Сходить в парикмахерскую", 3)
-manager.add_task("Посетить выставку", 3.5)
+manager.add_task("Посетить  выставку", 4)
 
 manager.show_pending_tasks()
 manager.mark_task_done("Испечь пирог")
