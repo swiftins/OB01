@@ -2,6 +2,7 @@
 #У задачи должны быть атрибуты: описание задачи, срок выполнения и статус 
 #(выполнено/не выполнено). Реализуй функцию для добавления задач, отметки выполненных 
 #задач и вывода списка текущих (не выполненных) задач.
+
 class Task:
     def __init__(self, description, time, status):
         self.description = description
@@ -16,9 +17,7 @@ class Task:
     def mark_as_done(self):
         self.status = "выполнено"   
         Deals.remove(self.description)   
-        Deals_done.append(self.description)
 
-Deals_done = []
 Deals = []
 
 t1 = Task("Испечь пирог", 2, "не выполнено")
@@ -30,10 +29,17 @@ print(Deals)
 
 print(t1.time, t2.time, t3.time)
 
+
 t1.mark_as_done()
 print(Deals)
-
 t2.mark_as_done()
+print(Deals)
+t1 = Task("Испечь пирог", 2, "не выполнено")
+t2 = Task("Сходить в парикмахерскую", 3, "не выполнено")
+t3 = Task ("Посетить  выставку", 4 , "не выполнено")
+
+    
+t1.mark_as_done()
 print(Deals)
 
 print(t1.time, t2.time, t3.time)
