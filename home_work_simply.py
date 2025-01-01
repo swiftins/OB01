@@ -27,6 +27,7 @@ class TaskManager:
 
 # Пример использования
 manager = TaskManager()
+
 print(manager.tasks)
 manager.add_task("Испечь пирог", 2)
 manager.add_task("Сходить в парикмахерскую", 3)
